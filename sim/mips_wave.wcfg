@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/taras/Documents/KPI/mips/mips/tb_mips_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_mips" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/tb_mips/uut/cpu_clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cpu_clk</obj_property>
+      <obj_property name="ObjectShortName">cpu_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_mips/uut/cpu_rst_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cpu_rst_n</obj_property>
+      <obj_property name="ObjectShortName">cpu_rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="group95" type="group">
+      <obj_property name="label">PC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_mips/uut/cpu_pc/i_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_pc/i_rst_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_rst_n</obj_property>
+         <obj_property name="ObjectShortName">i_rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_pc/i_pc" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_pc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_pc[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_pc/o_pc" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_pc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_pc[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group98" type="group">
+      <obj_property name="label">ROM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_mips/uut/cpu_rom/i_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_addr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">i_addr[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_rom/o_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_data[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group71" type="group">
+      <obj_property name="label">Control</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_mips/uut/cpu_control/i_instrCode" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_instrCode[15:0]</obj_property>
+         <obj_property name="ObjectShortName">i_instrCode[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_control/o_regDst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_regDst</obj_property>
+         <obj_property name="ObjectShortName">o_regDst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_control/o_jump" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_jump</obj_property>
+         <obj_property name="ObjectShortName">o_jump</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_control/o_branch" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_branch</obj_property>
+         <obj_property name="ObjectShortName">o_branch</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_control/o_memToReg" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_memToReg</obj_property>
+         <obj_property name="ObjectShortName">o_memToReg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_control/o_aluOp" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_aluOp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">o_aluOp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_control/o_memWrite" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_memWrite</obj_property>
+         <obj_property name="ObjectShortName">o_memWrite</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_control/o_aluSrc" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_aluSrc</obj_property>
+         <obj_property name="ObjectShortName">o_aluSrc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_control/o_regWrite" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_regWrite</obj_property>
+         <obj_property name="ObjectShortName">o_regWrite</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group76" type="group">
+      <obj_property name="label">MUX regfile</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_mips/uut/cpu_mux_regfile/i_dat0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_dat0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_dat0[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_mux_regfile/i_dat1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_dat1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_dat1[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_mux_regfile/i_control" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_control</obj_property>
+         <obj_property name="ObjectShortName">i_control</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_mux_regfile/o_dat" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_dat[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_dat[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group85" type="group">
+      <obj_property name="label">REGS</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_mips/uut/cpu_regs/i_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_regs/i_we" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_we</obj_property>
+         <obj_property name="ObjectShortName">i_we</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_regs/i_raddr1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_raddr1[4:0]</obj_property>
+         <obj_property name="ObjectShortName">i_raddr1[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_regs/i_raddr2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_raddr2[4:0]</obj_property>
+         <obj_property name="ObjectShortName">i_raddr2[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_regs/i_waddr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_waddr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">i_waddr[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_regs/i_wdata" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_wdata[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_wdata[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_regs/o_rdata1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_rdata1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_rdata1[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_regs/o_rdata2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_rdata2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_rdata2[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group61" type="group">
+      <obj_property name="label">ALU ctl</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_mips/uut/cpu_aluctrl/i_aluOp" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_aluOp[1:0]</obj_property>
+         <obj_property name="ObjectShortName">i_aluOp[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_aluctrl/i_func" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_func[5:0]</obj_property>
+         <obj_property name="ObjectShortName">i_func[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_aluctrl/o_aluControl" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_aluControl[3:0]</obj_property>
+         <obj_property name="ObjectShortName">o_aluControl[3:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group90" type="group">
+      <obj_property name="label">MUX alu</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_mips/uut/cpu_mux_alu/i_dat0" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">i_dat0[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_dat0[31:0]</obj_property>
+         <obj_property name="label">i_dat0[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_mux_alu/i_dat1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_dat1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_dat1[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_mux_alu/i_control" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_control</obj_property>
+         <obj_property name="ObjectShortName">i_control</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_mux_alu/o_dat" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_dat[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_dat[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group57" type="group">
+      <obj_property name="label">ALU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_mips/uut/cpu_alu/i_op1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_op1[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_op1[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_alu/i_op2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_op2[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_op2[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_alu/i_control" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_control[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i_control[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_alu/o_zf" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">o_zf</obj_property>
+         <obj_property name="ObjectShortName">o_zf</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_alu/o_result" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_result[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_result[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group61" type="group">
+      <obj_property name="label">RAM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_mips/uut/cpu_ram/i_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_ram/i_we" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">i_we</obj_property>
+         <obj_property name="ObjectShortName">i_we</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_ram/i_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_addr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">i_addr[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_ram/i_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">i_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">i_data[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_mips/uut/cpu_ram/o_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">o_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_data[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
